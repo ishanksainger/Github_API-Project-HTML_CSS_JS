@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Users Data</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- container -->
+        <div class="container">
+            <!-- upper div -->
+            <div class="upper-div">
+                <h1>Github Users-Data</h1>
+                <div class="color-change">
+                    <p data-type>Dark</p>
+                    <img src="images/moon-icon.svg" alt="" data-darkLight>
+                </div>
+            </div>
+            <!-- input -->
+            <form data-btnSubmit class="input-form">
+                <input placeholder="Enter a Github Username...." data-inputField class="intputField">
+                <span data-error class="error_class"></span>
+                <button type="submit">Search</button>
+            </form>
+            <!-- userinfo container -->
+            <div class="userinfo-container">
+            <!-- left container -->
+            <div class="left-container">
+                <img src="" alt="" class="user-image">
+            </div>
+            <!-- right container -->
+            <div class="right-container">
+                <!-- first part -->
+                <div class="firstPart">
+                    <div class="heading">
+                    <h1 data-nameHeading></h1>
+                    <a href="#" class="userName">@<p data-userName></p></a>
+                </div>
+                    <div class="joined">
+                        <p>Joined</p>
+                        <p data-joiningDate></p>
+                    </div>
+                </div>
+                <!-- second part -->
+                <h3 class="bio"></h3>
+                <!-- third part -->
+                <div class="repoClass">
+                    <p>Repos</p>
+                    <p>Followers</p>
+                    <p>Following</p>
+                    <p class="sub-class repos"></p>
+                    <p class="sub-class followers"></p>
+                    <p class="sub-class following"></p>
+                </div>
+                <!-- foruth part -->
+                <div class="lastPart">
+                    <div class="common">
+                        <img src="images/location-icon.svg" alt="">
+                        <p class="location"></p>
+                    </div>
+                    <div class="common">
+                        <img src="images/website-icon.svg" alt="">
+                        <a href="#" data-emailLink ><p class="email"></p></a>
+                    </div>
+                    <div class="common">
+                        <img src="images/twitter-icon.svg" alt="">
+                        <a href="#" data-twitterLink><p class="twitter"></p></a>
+                    </div>
+                    <div class="common">
+                        <img src="images/company-icon.svg" alt="">
+                        <p class="company"></p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
