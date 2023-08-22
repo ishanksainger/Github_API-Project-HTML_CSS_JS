@@ -1,16 +1,19 @@
-*,*::after,*::before{
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Space Mono", monospace;
 }
-:root{
+
+:root {
     --lm-bg-dark: #141D2F;
     --lm-bg: #f6f8ff;
     --lm-bg-content: #fefefe;
     --lm-bg-content-dark: #1E2A47;
     --lm-text: #4b6a9b;
-    --lm-text-white:white;
+    --lm-text-white: white;
     --lm-text-alt: #2b3442;
     --lm-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
     --lm-shadow-inactive: 0px 16px 30px -10px rgba(0, 0, 0, 0.2);
@@ -19,7 +22,7 @@
     --btn-hover: #60abff;
 }
 
-.wrapper{
+.wrapper {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
@@ -28,12 +31,14 @@
     font-size: 13px;
 
 }
-.wrapper.active{
+
+.wrapper.active {
     background-color: var(--lm-bg-dark);
     font-size: 13px;
     color: var(--lm-text-white);
 }
-.container{
+
+.container {
     max-width: 730px;
     width: 100%;
     margin: 0 auto;
@@ -47,13 +52,15 @@
     transform: translate(-50%, -50%);
     gap: 2rem;
 }
-.upper-div{
+
+.upper-div {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
 }
-.color-change{
+
+.color-change {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,7 +70,8 @@
     font-weight: bold;
     cursor: pointer;
 }
-.input-form{
+
+.input-form {
     position: relative;
     background-color: var(--lm-bg-content);
     border-radius: 15px;
@@ -80,10 +88,12 @@
     background-position-y: center;
     background-size: 20px;
 }
-.input-form.active{
+
+.input-form.active {
     background-color: var(--lm-bg-content-dark);
 }
-.intputField{
+
+.intputField {
     border: none;
     width: 60%;
     outline: none;
@@ -92,16 +102,20 @@
     color: var(--lm-text);
     padding-left: 50px;
 }
-.intputField.active{
+
+.intputField.active {
     color: var(--lm-text-white);
 }
-.intputField::placeholder{
+
+.intputField::placeholder {
     font-size: 18px;
 }
-.active::placeholder{
-    color:var(--lm-text-white)
+
+.active::placeholder {
+    color: var(--lm-text-white)
 }
-.input-form button{
+
+.input-form button {
     min-width: 84px;
     padding: 14px 28px;
     font-size: 16px;
@@ -112,14 +126,16 @@
     font-weight: bold;
     cursor: pointer;
 }
-.error_class{
+
+.error_class {
     display: none;
     color: red;
     width: 21%;
     font-weight: bold;
     font-size: 15px;
 }
-.userinfo-container{
+
+.userinfo-container {
     position: relative;
     width: 100%;
     display: flex;
@@ -130,126 +146,313 @@
     box-shadow: var(--lm-shadow);
     padding: 40px;
 }
-.userinfo-container.active{
+
+.userinfo-container.active {
     background-color: var(--lm-bg-content-dark);
     border-radius: 15px;
     box-shadow: var(--lm-shadow);
 }
-.left-container{
+
+.left-container {
     width: 26%;
 }
-.left-container img{
+
+.left-container img {
     width: 117px;
     border-radius: 50%;
     position: absolute;
     top: 0;
     margin-top: 40px;
 }
-.right-container{
+
+.right-container {
     width: 74%;
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
-.firstPart{
+
+.firstPart {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.firstPart h1{
+
+.firstPart h1 {
     font-size: 26px;
     font-weight: bold;
     color: var(--lm-text-alt);
 }
-h1[data-nameHeading].active{
+
+h1[data-nameHeading].active {
     color: var(--lm-text-white);
 }
-.firstPart a{
+
+.firstPart a {
     font-size: 16px;
     color: var(--btn);
 }
-.joined{
+
+.joined {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
     font-size: 15px;
 }
-.heading{
+
+.heading {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 2px;
 }
-.userName{
+
+.userName {
     display: flex;
     gap: 1px;
 }
-.bio{
+
+.bio {
     line-height: 25px;
     opacity: 0.75;
     font-size: 15px;
 }
-.repoClass{
+
+.repoClass {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
     margin: 20px 0;
     border-radius: 10px;
     background-color: var(--lm-bg);
     padding: 18px 32px;
 }
-.repoClass.active{
+
+.repoClass.active {
     background-color: var(--lm-bg-dark);
 }
-.sub-class.active{
+
+.sub-class.active {
     color: var(--lm-text-white);
 }
-.repoClass p:nth-child(1){
+
+.repoClass p:nth-child(1) {
     font-size: 13px;
 }
-.repoClass p:nth-child(2){
+
+.repoClass p:nth-child(2) {
     font-size: 13px;
 }
-.repoClass p:nth-child(3){
+
+.repoClass p:nth-child(3) {
     font-size: 13px;
 }
-.sub-class{
+
+.sub-class {
     font-size: 22px;
     font-weight: bold;
     color: var(--lm-text-alt);
 }
-.sub-class{
-    font-size: 22px;
-    font-weight: bold;
-    color: var(--lm-text-alt);
-}
-.sub-class{
-    font-size: 22px;
-    font-weight: bold;
-    color: var(--lm-text-alt);
-}
-.lastPart{
+
+.lastPart {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-row-gap: 16px; /* Row gap */
+    grid-row-gap: 16px;
+    /* Row gap */
     grid-column-gap: 0;
 }
-.common{
+
+.common {
     display: flex;
     font-size: 15px;
     justify-content: center;
     align-items: center;
     gap: 14px;
 }
-.common a{
+
+.common a {
     color: inherit;
 }
-.common.active{
+
+.common.active {
     color: var(--lm-text-white);
 }
 
-.lastPart a{
+.lastPart a {
     cursor: pointer;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .container {
+        width: 573px;
+    }
+
+    .userinfo-container {
+        display: flex;
+
+    }
+    .input-form{
+        background-position-x: 18px;
+        background-size: 20px;
+    }
+    .intputField{
+        font-size: 14px;
+    }
+    .intputField::placeholder {
+        font-size: 14px;
+    }
+    .input-form button{
+        width: 100px;
+        font-size: 13px;
+        text-align: center;
+        padding: 14px 22px;
+    }
+
+    .error_class {
+        font-size: 13px;
+    }
+    .left-container {
+        width: auto;
+    }
+
+    .right-container {
+        width: 100%;
+    }
+
+    .bio {
+        text-align: left;
+        margin-top: 2rem;
+    }
+
+    .firstPart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 1rem;
+    }
+
+    .joined {
+        margin-right: 3.5rem;
+    }
+
+    .common {
+        font-size: 16px;
+    }
+
+    .lastPart {
+        place-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 327px;
+    }
+    .upper-div h1{
+        font-size: 20px;
+    }
+    .input-form{
+        background-position-x: 13px;
+        background-size: 17px;
+        position: static;
+    }
+    .intputField{
+        width: 63%;
+        font-size: 13px;
+        padding-left: 30px;
+    }
+    .intputField::placeholder {
+        font-size: 13px;
+    }
+    .input-form button{
+        width: 90px;
+        font-size: 13px;
+        text-align: center;
+        padding: 14px 22px;
+    }
+
+    .error_class {
+        position: absolute;
+        width: 39%;
+        top: 35px;
+        right: 0;
+        font-size: 13px;
+    }
+
+    .userinfo-container {
+        display: flex;
+        padding: 24px;
+
+    }
+
+    .left-container {
+        width: auto;
+    }
+
+    .left-container img {
+        width: 70px;
+        margin-top: 24px;
+    }
+
+    .right-container {
+        width: 100%;
+    }
+
+    .bio {
+        text-align: left;
+        margin-top: 1rem;
+        font-size: 13px;
+    }
+
+    .firstPart {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        margin-right: 3.5rem;
+    }
+
+    .firstPart h1 {
+        font-size: 16px;
+    }
+
+    .joined {
+        margin-right: -1rem;
+        font-size: 13px;
+    }
+
+    .common {
+        font-size: 16px;
+    }
+
+    .lastPart {
+        place-items: flex-start;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .repoClass {
+        padding: 15px 5px;
+        place-items: center;
+        grid-row-gap: 10px;
+    }
+
+    .repoClass p:nth-child(1) {
+        font-size: 11px;
+    }
+
+    .repoClass p:nth-child(2) {
+        font-size: 11px;
+    }
+
+    .repoClass p:nth-child(3) {
+        font-size: 11px;
+    }
+
+    .sub-class {
+        font-size: 18px;
+        font-weight: bold;
+        color: var(--lm-text-alt);
+    }
+
 }
